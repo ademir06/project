@@ -1,0 +1,115 @@
+#group {
+  background: rgba(132, 34, 49, 0.05);
+  height: 550px;
+
+  .content {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          //align-items: center;
+          //justify-content: space-evenly;
+          position: relative;
+          z-index: -2;
+          margin: 20px 80px;
+          font-size: 18px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+
+          @include flex-center;
+
+
+          .group__two {
+
+
+            .group__img {
+              position: absolute;
+              z-index: -1;
+              top: 100px;
+              right: 1030px;
+            }
+
+            h1 {
+              padding: 0 0 30px 0;
+            }
+          }
+
+          .group__one {
+            padding-left: 20px;
+            margin-top: 70px;
+          }
+
+          .group__three {
+            margin: 0 30px 0 20px;
+            width: 40%;
+
+            h1 {
+              //padding: 0 0 30px 0;
+            }
+          }
+
+          .group__four {
+            margin-left: 30px;
+            margin-top: 70px;
+
+          }
+
+          .group__two {
+            width: 436px;
+            height: 414px;
+            padding-right: 80px;
+
+            &__img {
+              height: 330px;
+              //width: 692.41px
+
+            }
+          }
+        }
+      }
+
+      .prev {
+
+        margin: 0 0 50px 0;
+        position: absolute;
+        top: 250px;
+        right: 20px;
+        z-index: 1;
+        //font-size: 30px;
+        border-radius: 100%;
+        background-color: #842231;
+        height: 50px;
+        width: 50px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+      }
+    }
+
+    .next {
+      z-index: 99;
+      border-radius: 100%;
+      background-color: #842231;
+      height: 50px;
+      width: 50px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+
+    }
+  }
+}

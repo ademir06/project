@@ -1,0 +1,33 @@
+#payment {
+  .container {
+    .content--payment {
+      position: relative;
+      text-align: center;
+      //z-index: 1;
+      padding-top: 10rem;
+
+      .payment--img {
+        position: absolute;
+        right: 16rem;
+        z-index: -1;
+        top: 4rem;
+      }
+
+      .payment--two {
+        display: flex;
+        align-items: center;
+        margin-left: 15rem;
+        margin-top: 8rem;
+
+        .payment--one {
+          margin: 0 30px;
+
+          h2 {
+            font-size: 17px;
+            margin-top: 13px;
+          }
+        }
+      }
+    }
+  }
+}

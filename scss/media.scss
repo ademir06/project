@@ -1,0 +1,357 @@
+@media (max-width: 570px) {
+  .wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  #header {
+    .container {
+      .header {
+        display: block;
+
+        ul {
+          display: none;
+        }
+
+        .header--right__icons {
+          display: none;
+        }
+      }
+      .hamburger-menu {
+        display: block;
+        ul,li{
+          display: block;
+        }
+        .menu__btn {
+          top: 55px;
+          right: 10px;
+          left: 340px;
+        }
+      }
+      #menu__toggle {
+        opacity: 0;
+      }
+      /* стилизуем кнопку */
+      .menu__btn {
+        display: flex; /* используем flex для центрирования содержимого */
+        align-items: center; /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      /* добавляем "гамбургер" */
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      /* контейнер меню */
+      .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+      }
+      /* элементы меню */
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .menu__item:hover {
+        background-color: #CFD8DC;
+      }
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        right: 0;
+      }
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        transition-duration: .25s;
+      }
+      .menu__box {
+        transition-duration: .25s;
+      }
+      .menu__item {
+        transition-duration: .25s;
+      }
+    }
+  }
+  #hero {
+    .container {
+      .hero__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
+  }
+  #section {
+    .content-img {
+      display: block;
+    }
+  }
+  #section {
+    .content-img {
+      display: block;
+    }
+
+    .container {
+      .sections__content {
+        flex-direction: column !important;
+
+        .sections__content__six {
+          display: block;
+          width: 100%;
+
+          .sections__content__six__img {
+            display: none;
+            width: 100%;
+          }
+
+          .sections__content__six__images {
+            width: 100%;
+          }
+        }
+
+      }
+    }
+  }
+  #group {
+    .content {
+      display: block;
+
+      .swiper {
+        .group__four {
+          display: none;
+        }
+      }
+
+      .group__one {
+        display: none;
+      }
+    }
+  }
+  #lokatsiya {
+    .container {
+      .content__lokatsiya {
+        display: block;
+
+        .lokatsiya__img {
+          display: none;
+        }
+
+        .lokatsiya__three {
+          .lokatsiya__img__one {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  #benefits {
+    .content__benefits {
+      display: block;
+      flex-direction: column;
+      width: 100%;
+      //.block__fourteen__two{
+      //  display: none;
+      //  //padding: 30px 20px;
+      //}
+
+      .block__seven {
+        display: block;
+      }
+
+      .block__fiftin {
+        display: block;
+
+        img {
+          width: 100%;
+        }
+      }
+
+
+      .block__ten {
+        display: block;
+      }
+
+      .block_twelve {
+        flex-direction: column;
+        display: none;
+      }
+    }
+  }
+  #elite {
+    .content__elite {
+      .content__elite--one {
+        h1 {
+          margin: 0;
+        }
+      }
+
+      .z-index {
+        width: 100%;
+      }
+
+      .content__elite--nine {
+        display: block;
+
+        .meet {
+          display: none;
+        }
+
+        .content__elite--two {
+          margin: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  #technology {
+    .content__technology {
+      .technology--img {
+        width: 100%;
+        right: 0 !important;
+      }
+
+      .block__technology--one {
+        display: block !important;
+
+        .block__technology--three {
+          display: block;
+        }
+      }
+    }
+  }
+  #presentation {
+    .content__presentation {
+      .block__presentation {
+        padding: 0 !important;
+
+        input {
+          margin-right: 0 !important;
+          margin-bottom: 10px;
+        }
+
+        .block__presentation--one {
+          display: block !important;
+          padding: 0;
+          text-align: center;
+
+          .button-- {
+            margin-bottom: 10px !important;
+          }
+
+          .button--one {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  #payment {
+    .container {
+      .content--payment {
+        padding-top: 5rem !important;
+
+        .payment--img {
+          width: 100%;
+          right: 0 !important;
+        }
+
+        .payment--two {
+          margin-left: 0 !important;
+          display: block !important;
+
+          .payment--one {
+            //display: block !important;
+          }
+        }
+      }
+    }
+  }
+  #address {
+    .container {
+      .content--address {
+        .address__one {
+          display: block !important;
+
+          img {
+            width: 100%;
+          }
+
+          .address__two {
+            .address__three {
+              .address__four {
+                width: 90% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    .container {
+      .content--footer {
+        display: block !important;
+
+        h2 {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+

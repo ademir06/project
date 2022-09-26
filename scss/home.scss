@@ -1,0 +1,142 @@
+
+header.sticky{
+  background: rgba(132, 34, 49, 0.8);
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header--right {
+      display: flex;
+      flex-direction: column;
+      text-align: end;
+
+      ul {
+        display: flex;
+
+        li {
+          padding: 0 25px;
+
+          a {
+            color: #FFFFFF;
+            border-bottom: 4px solid transparent;
+            cursor: pointer;
+            &:hover{
+              border-bottom: 4px solid black;
+            }
+          }
+
+        }
+      }
+    }
+    .hamburger-menu{
+      display: none;
+    }
+
+    .header--right__icons {
+      padding: 0 25px 30px 0;
+
+      a {
+        color: #FFFFFF;
+        font-size: 20px;
+      }
+
+      .fa-whatsapp {
+        font-size: 30px;
+        padding: 0 10px;
+        color: #FFFFFF;
+
+      }
+    }
+  }
+}
+
+#hero {
+  background-image: url("../img/img-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  .hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60rem;
+
+    .hero__content__right {
+      .hero__content__one {
+        color: #FFFFFF;
+
+        p {
+          padding: 10px 0;
+        }
+
+      }
+    }
+
+
+    &__left {
+      h1 {
+        color: #FFFFFF;
+      }
+
+      .btn {
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        padding: 11px 10px;
+        margin: 25px 0;
+        background-color: #DBA069;
+        color: black;
+        border: none;
+        transition: .4s;
+
+      }
+
+      .btn:hover {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        background: #ffffff;
+
+      }
+
+      &__desc {
+        display: flex;
+        padding: 30px 0;
+
+
+        &__two {
+          display: flex;
+          color: #FFFFFF;
+
+          h1 {
+            font-size: 70px;
+            padding: 0 10px;
+            color: #FFFFFF;
+          }
+        }
+
+        &__three {
+          display: flex;
+          color: #FFFFFF;
+
+          h1 {
+            font-size: 70px;
+            color: #FFFFFF;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

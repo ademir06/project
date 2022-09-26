@@ -1,0 +1,78 @@
+#elite {
+  .content__elite {
+    .content__elite--nine {
+      margin: 40px 0 0 30px;
+      display: flex;
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .poragrav {
+        padding: 0 0 0 25px;
+
+        p {
+          padding-top: 10px;
+        }
+      }
+
+      .content__elite--three {
+        padding: 90px 0 0 30px;
+
+        .content__elite--four {
+          display: flex;
+
+          img {
+            object-fit: cover;
+          }
+        }
+
+        .content__elite--five {
+          display: flex;
+          padding-top: 60px;
+        }
+      }
+
+      .content__elite--six {
+        padding: 90px 0 0 60px;
+
+        .content__elite--seven {
+          display: flex;
+        }
+
+        .content__elite--eight {
+          display: flex;
+          padding-top: 60px;
+        }
+      }
+    }
+
+    &--one {
+      top: 30px;
+
+      h1 {
+        margin: 0 0 0 9rem;
+        padding-top: 80px;
+      }
+
+      .z-index {
+        position: relative;
+        z-index: -1;
+        top: -90px;
+        bottom: 10rem;
+      }
+    }
+
+    &--two {
+      position: relative;
+      margin: 0 0 0 8rem;
+
+      .meet {
+        position: absolute;
+        top: 80px;
+        left: -5rem;
+        z-index: -1;
+      }
+    }
+  }
+}

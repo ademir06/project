@@ -1,0 +1,51 @@
+@import "_mixins";
+@import "_veriables";
+.body{
+  font-family: 'Fira Sans' ,sans-serif;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+h1,h1{
+  font-family: 'Fira Sans',sans-serif;
+  font-size: 40px;
+}
+
+// scroll btn
+
+.scrollToop-btn {
+  z-index: 999;
+  position: fixed;
+  color: #fff;
+  background: crimson;
+  border-radius: 3px;
+  width: 45px;
+  height: 45px;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  font-size: 23px;
+  line-height: 45px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.scrollToop-btn.active {
+  right: 10px;
+  opacity: 1;
+}
